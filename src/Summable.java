@@ -1,3 +1,3 @@
-public interface Summable {
-    Double sum();
+public interface Summable<T extends Number> {
+    T sum();
 }

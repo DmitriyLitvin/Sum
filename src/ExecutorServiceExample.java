@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class ExecutorServiceExample implements Summable {
+public class ExecutorServiceExample implements Summable<Double> {
     private List<Double>doubles;
 
     public ExecutorServiceExample(List<Double> doubles) {

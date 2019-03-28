@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
-public class SumRecursiveTask extends RecursiveTask implements Summable {
+public class SumRecursiveTask extends RecursiveTask implements Summable<Double> {
     private List<Double> doubles;
     private int start;
     private int end;
