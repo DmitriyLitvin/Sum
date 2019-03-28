@@ -35,8 +35,8 @@ public class ExecutorServiceExample implements Summable {
             }
 
             List<Double> list = doubles.subList(leftLimitation, rightLimitation);
-            Future<Double> integerFuture = executor.submit(new SumCallable(list));
-            futureArrayList.add(integerFuture);
+            Future<Double> doubleFuture = executor.submit(new SumCallable(list));
+            futureArrayList.add(doubleFuture);
         }
 
         try {
